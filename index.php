@@ -24,15 +24,11 @@
                 <div class="login-page">
                     <div class="form">
                         
-                        <form class="login-form" method="post" action="api/user/login" >
-                            <input type="text" name="first" placeholder="First name"/>
-                            <input type="text" name="last" placeholder="Last name"/>
-                            <input type="text" name="organization" placeholder="Organization"/>
-                            <input type="hidden" name="event_type" value="verify_membership" />
-                            <input type="submit" value="Verify" id="submit" name="submit"/>
-                            <p class="message">Not registered? <a href="#">Create an account</a></p>
+                        <form class="login-form" method="post" action="api/v1/user/login" >
+                            <input type="text" name="email" placeholder="email"/>
+                            <input type="text" name="password" placeholder="password"/>
+                            <input type="submit" value="login" id="submit" name="Login"/>
                         </form>
-                        
                     </div>
                 </div>
                 
